@@ -1,4 +1,4 @@
-localhost:3000/posts/new
+//localhost:3000/posts/new
 import React from "react";
 
 const page = () => {
