@@ -1,0 +1,19 @@
+Next JS
+
+Only the root layout can contain <html> and <body> tags.
+
+It will support both Client side and server side rendering
+
+When component defined into the nextJs when we mentioned 
+'use client' at the top the component it is client side rendering so we can use => react and react hooks
+When plain component is there without any use client that is server side rendering we can't use react and react hooks
+
+So when to use server side and client side components? 
+
+Server side component             client side component
+fetch data from backend           add interactivity and event listeners (onclick, onchange etc)
+access backend resources          use state and lifecycle methods (usestate, usereducer, useeffect)
+keep sensitvie info on the        use custom hooks that depend on state effects 
+server(access tokens, api keys)   use react class components 
+keep large denpendencies on the server
+/ reduce client-side js
