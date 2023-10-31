@@ -24,13 +24,34 @@ A layout is UI that is shared between multiple pages. On navigation, layouts pre
 
 You can define a layout by default exporting a React component from a layout.js file. The component should accept a children prop that will be populated with a child layout (if it exists) or a child page during rendering.
 
-The top-most layout is called the Root Layout. This required layout is shared across all pages in an application. Root layouts must contain html and body tags.
+The top-most layout is called the Root Layout. 
+
+This required layout is shared across all pages in an application. Root layouts must contain html and body tags.
+
 Any route segment can optionally define its own Layout. These layouts will be shared across all pages in that segment.
 Layouts in a route are nested by default. Each parent layout wraps child layouts below it using the React children prop.
 You can use Route Groups to opt specific route segments in and out of shared layouts.
+
 Layouts are Server Components by default but can be set to a Client Component.
+
 Layouts can fetch data. View the Data Fetching section for more information.
-Passing data between a parent layout and its children is not possible. However, you can fetch the same data in a route more than once, and React will automatically dedupe the requests without affecting performance.
+
+Passing data between a parent layout and its children is not possible. 
+
+However, you can fetch the same data in a route more than once, and React will automatically dedupe the requests without affecting performance.
+
 Layouts do not have access to the route segments below itself. To access all route segments, you can use useSelectedLayoutSegment or useSelectedLayoutSegments in a Client Component.
+
 .js, .jsx, or .tsx file extensions can be used for Layouts.
+
 A layout.js and page.js file can be defined in the same folder. The layout will wrap the page.
+
+The app directory must include a root layout.
+
+The root layout must define <html> and <body> tags since Next.js does not automatically create them.
+
+You can use the built-in SEO support to manage <head> HTML elements, for example, the <title> element.
+
+You can use route groups to create multiple root layouts. See an example here.
+
+The root layout is a Server Component by default and can not be set to a Client Component.
