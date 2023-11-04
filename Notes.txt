@@ -1,5 +1,7 @@
 Next JS
 
+npx create-next-app@latest
+
 Only the root layout can contain <html> and <body> tags.
 
 It will support both Client side and server side rendering
