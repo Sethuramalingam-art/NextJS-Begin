@@ -57,3 +57,13 @@ You can use the built-in SEO support to manage <head> HTML elements, for example
 You can use route groups to create multiple root layouts. See an example here.
 
 The root layout is a Server Component by default and can not be set to a Client Component.
+
+IMPORTANT***********
+React renders Server Components into a special data format called the React Server Component Payload (RSC Payload), which includes references to Client Components.
+Next.js uses the RSC Payload and Client Component JavaScript instructions to render HTML for the route on the server.
+
+The RSC Payload is a compact binary representation of the rendered React Server Components tree. It's used by React on the client to update the browser's DOM. The RSC Payload contains:
+
+The rendered result of Server Components
+Placeholders for where Client Components should be rendered and references to their JavaScript files
+Any props passed from a Server Component to a Client Component
