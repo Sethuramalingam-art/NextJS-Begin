@@ -74,3 +74,5 @@ Data fetching in next.js
 Server side rendering
 static site generation
 Incremental Static generation
+
+You should not manually add <head> tags such as <title> and <meta> to root layouts. Instead, you should use the Metadata API which automatically handles advanced requirements such as streaming and de-duplicating <head> elements.
