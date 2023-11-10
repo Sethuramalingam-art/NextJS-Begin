@@ -69,3 +69,8 @@ The RSC Payload is a compact binary representation of the rendered React Server 
 The rendered result of Server Components
 Placeholders for where Client Components should be rendered and references to their JavaScript files
 Any props passed from a Server Component to a Client Component
+
+Data fetching in next.js 
+Server side rendering
+static site generation
+Incremental Static generation
