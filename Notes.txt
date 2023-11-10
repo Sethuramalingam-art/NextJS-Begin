@@ -20,7 +20,9 @@ server(access tokens, api keys)   use react class components
 keep large denpendencies on the server
 / reduce client-side js
 
+When we create layout.tsx file in subfolder of app => that should be a reusable component for that subfolder
 
+if loading or error screen we have defined inside a subfolder with layout means that should be available for tht subfolder
 Layouts
 A layout is UI that is shared between multiple pages. On navigation, layouts preserve state, remain interactive, and do not re-render. Layouts can also be nested.
 
