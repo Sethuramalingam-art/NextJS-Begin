@@ -2,6 +2,7 @@ Next JS
 
 npx create-next-app@latest
 
+Next JS framework we can do fullstack app 
 Only the root layout can contain <html> and <body> tags.
 
 It will support both Client side and server side rendering
