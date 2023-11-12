@@ -78,3 +78,11 @@ Incremental Static generation => this will also cache but after some secs it wil
 await fetch('', {next: {revalidate: 10 }})
 
 You should not manually add <head> tags such as <title> and <meta> to root layouts. Instead, you should use the Metadata API which automatically handles advanced requirements such as streaming and de-duplicating <head> elements.
+
+
+How to improve SEO in nextjs app?
+we can define meta data in two ways=> Static and Dynamic
+
+Static meta data
+Dynamic meta data
+
