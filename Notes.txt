@@ -71,8 +71,9 @@ Placeholders for where Client Components should be rendered and references to th
 Any props passed from a Server Component to a Client Component
 
 Data fetching in next.js 
-Server side rendering
-static site generation
-Incremental Static generation
+Server side rendering => showing a content upto date => await fetch('', {'cache': 'no-store'}) => not caching
+static site generation => await fetch('') => next js supports static site gen => by default it will cache => first time will call the api then it will tke from cache 
+Incremental Static generation => this will also cache but after some secs it will check the latest data from backend like refresh
+await fetch('', {next: {revalidate: 10 }})
 
 You should not manually add <head> tags such as <title> and <meta> to root layouts. Instead, you should use the Metadata API which automatically handles advanced requirements such as streaming and de-duplicating <head> elements.
